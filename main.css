@@ -1,0 +1,42 @@
+/* général */
+p {
+    text-align: justify;
+}
+a { color: #afcacb;
+    font-size: 15px;
+    text-decoration:none;
+}
+ul {  list-style: none;
+}
+
+li {  list-style: none;
+}
+
+/* corps du site */
+ body {
+      margin: 0px;
+ }
+
+/* header */
+  header { 
+     background-color: #a3a29f; 
+     padding-top: 10px;
+     padding-bottom:10px;
+  }
+
+nav li {  display: inline;
+}
+
+/*footer */
+
+footer {
+
+left:0;
+ height:80px;
+ width: 100%;
+ background-color: #2f2f2f;
+ display: block;
+ padding-bottom:-10px;
+ position: fixed;
+bottom: 0px;
+}
