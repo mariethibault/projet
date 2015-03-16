@@ -3,7 +3,6 @@ p {
     text-align: justify;
 }
 a { color: #afcacb;
-    font-size: 15px;
     text-decoration:none;
 }
 ul {  list-style: none;
@@ -11,6 +10,20 @@ ul {  list-style: none;
 
 li {  list-style: none;
 }
+
+h1 { color:#2f2f2f; 
+    margin-left:2px;
+    font:12px 'Roboto';
+    text-align:left;
+    width:270px;
+    padding:3px;
+    line-height:25px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-weight:900;
+    border-bottom:1px solid;
+}
+
 
 /* corps du site */
  body {
@@ -20,12 +33,103 @@ li {  list-style: none;
 /* header */
   header { 
      background-color: #a3a29f; 
-     padding-top: 10px;
-     padding-bottom:10px;
+     padding-top: 0px;
+     padding-bottom:0px;
+      color:grey;
+      color:grey;
+    margin-top:0px;
+    margin-left:0px;
+    width:310px;
+    height:100%;
+    position:fixed;
+    padding:9px;
   }
+    
+header li {  text-transform:uppercase;
+    text-align:left;
+    display:block;
+    width:270px;
+    margin-left:0px;
+    }
 
 nav li {  display: inline;
+    margin-top:170px;
+    margin-left:2px;
+     width:250px;
+    padding:3px;
+    line-height:25px;
+    letter-spacing:1px;
+    font-size: 15px;
+    }
+
+nav a:hover {
+    color:white;
+   }
+
+.nav-main {
+    position: absolute;
+    top:50%;
+    margin-top: -100px;
 }
+/* main */
+main {  
+    margin-left:320px;
+}
+
+/*MOVIES : test */
+
+
+
+#film {
+    display:inline-block;
+    margin:20px;
+    position: relative;
+}
+ 
+.com{
+    position: absolute;
+    left:0;
+    top:50%;
+    width: 100%;
+    margin-top: -10px;
+    text-align: center;
+     opacity:0;
+    -ms-transform: scale(.7);
+    -webkit-transform: scale(.7);
+    transform: scale(.7);
+    text-align:center;
+    transition-duration:.5s;
+    -moz-transition-duration:.5s;
+    -webkit-transition-duration:.5s;
+    -o-transition-duration:.5s;
+}
+ 
+#film:hover .com{
+    opacity:1;
+    font:10px Corbel;
+    bottom:20px;
+    transition-delay:.1s;
+    transition-duration:.5s;
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -moz-transition-duration:.5s;
+    -webkit-transition-duration:.5s;
+    -o-transition-duration:.5s;
+}
+ 
+.com h2{
+    margin:0;
+    background-color: white;
+    color: #2f2f2f;
+    font:12px Bitter;
+    letter-spacing:1px;
+    padding:3px;
+    line-height:140%;
+    text-transform:uppercase;
+   
+}
+
 
 /*footer */
 
