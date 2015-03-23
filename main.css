@@ -135,7 +135,8 @@ main {
 }
 #filmindex {
     display:inline-block;
-    margin:10px;        
+    margin:10px;
+    width: 100px;
 }
 /* MOVIES */
 
@@ -190,6 +191,20 @@ main {
     text-transform:uppercase;
    
 }
+/* PAGE PERSONNAGE */
+.flotte3 {
+    clear:left;
+    width: 300px;
+    padding:5px;
+    margin:5px;
+    border: 1px solid #2f2f2f; 
+}
+
+.dperso {
+    width: 500px;
+    float: left;
+    display: inline;
+}
 
 
 /*footer */
@@ -197,11 +212,12 @@ main {
 footer {
     right:0;
     height:100px;
-    width: calc(100% - 300px);
+    width: calc(100% - 700px);
     background-color: #2f2f2f;
-    display: block;
+    display: inline;
     position:fixed;
     bottom:0;
+    margin-bottom: 30px;
     }
 
 footer a {
@@ -211,5 +227,10 @@ footer a {
     letter-spacing:1px;
     text-transform:uppercase;
     font-weight:800;
+    display: inline-block;
 }
     
+.en-cours {
+    text-decoration: underline;
+    color: white;
+}
