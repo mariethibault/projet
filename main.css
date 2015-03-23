@@ -1,9 +1,20 @@
+body, html{
+height:100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* général */
 p {
     text-align: justify;
+    font: 12px 'arial';
 }
-a { color: #afcacb;
-    text-decoration:none;
+a {  text-decoration:none;
 }
 ul {  list-style: none;
 }
@@ -13,17 +24,38 @@ li {  list-style: none;
 
 h1 { color:#2f2f2f; 
     margin-left:2px;
-    font:12px 'Roboto';
+    font:18px 'arial';
     text-align:left;
     width:270px;
     padding:3px;
     line-height:25px;
     letter-spacing:1px;
     text-transform:uppercase;
-    font-weight:900;
+    font-weight:800;
     border-bottom:1px solid;
 }
 
+h2 { 
+    color:#2f2f2f;
+    font:30px 'arial';
+    text-align:left;
+    line-height:25px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-weight:800;
+    border-bottom:1px solid;
+}
+
+h3 {
+    color:#2f2f2f;
+    font:20px 'arial';
+    text-align:left;
+    line-height:25px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-weight:900;
+    border-bottom:1px solid;
+}
 
 /* corps du site */
  body {
@@ -45,11 +77,17 @@ h1 { color:#2f2f2f;
     padding:9px;
   }
     
-header li {  text-transform:uppercase;
+header li { 
     text-align:left;
-    display:block;
+    display:inline-block;
     width:270px;
     margin-left:0px;
+    color: white;
+    margin-left:2px;
+    font:10px 'arial';
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-weight:800;
     }
 
 nav li {  display: inline;
@@ -60,23 +98,46 @@ nav li {  display: inline;
     line-height:25px;
     letter-spacing:1px;
     font-size: 15px;
+    color: white;
     }
 
-nav a:hover {
+nav a {
     color:white;
-   }
+}
 
 .nav-main {
     position: absolute;
     top:50%;
     margin-top: -100px;
 }
-/* main */
+/* MAIN */
 main {  
     margin-left:320px;
+    min-height:100%;
+}
+/* INDEX */
+
+.index {
+    margin-left: 360px;
+    margin-right:50px;
+    overflow: hidden;
 }
 
-/*MOVIES : test */
+.flotte {
+    float:right;
+    height: 100px;
+    padding:5px;
+}
+.flotte2 {
+    float:left;
+    height: 100px;
+    padding:5px;
+}
+#filmindex {
+    display:inline-block;
+    margin:10px;        
+}
+/* MOVIES */
 
 
 
@@ -134,12 +195,21 @@ main {
 /*footer */
 
 footer {
+    right:0;
+    height:100px;
+    width: calc(100% - 300px);
+    background-color: #2f2f2f;
+    display: block;
+    position:fixed;
+    bottom:0;
+    }
 
- left:0;
- height:100px;
- width: 100%;
- background-color: #2f2f2f;
- display: block;
- position: fixed;
- bottom: 0px;
+footer a {
+     color:white;
+    margin-left:2px;
+    font:10px 'arial';
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-weight:800;
 }
+    
