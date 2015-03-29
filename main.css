@@ -1,15 +1,4 @@
-body, html{
-height:100%;
-}
-
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* général */
+/* GENERAL */
 p {
     text-align: justify;
     font: 12px 'arial';
@@ -57,12 +46,24 @@ h3 {
     border-bottom:1px solid;
 }
 
-/* corps du site */
+body, html{
+height:100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* BODY */
+
  body {
       margin: 0px;
  }
 
-/* header */
+/* HEADER */
   header { 
      background-color: #a3a29f; 
      padding-top: 0px;
@@ -110,12 +111,43 @@ nav a {
     top:50%;
     margin-top: -100px;
 }
+
 /* MAIN */
+
 main {  
     margin-left:320px;
     min-height:100%;
 }
-/* INDEX */
+
+/* FOOTER */
+
+footer {
+    right:0;
+    height:100px;
+    width: calc(100% - 700px);
+    background-color: #2f2f2f;
+    display: inline;
+    position:fixed;
+    bottom:0;
+    margin-bottom: 30px;
+    }
+
+footer a {
+     color:white;
+    margin-left:2px;
+    font:10px 'arial';
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-weight:800;
+    display: inline-block;
+}
+    
+.en-cours {
+    text-decoration: underline;
+    color: white;
+}
+
+/* PAGE ACCUEIL */
 
 .index {
     margin-left: 360px;
@@ -136,11 +168,16 @@ main {
 #filmindex {
     display:inline-block;
     margin:10px;
-    width: 100px;
 }
-/* MOVIES */
+
+#filmindex img {
+    width:150px;
+}
+
+/* L'HISTOIRE */ 
 
 
+/* LES PERSONNAGES */
 
 #film {
     display:inline-block;
@@ -192,6 +229,7 @@ main {
    
 }
 /* PAGE PERSONNAGE */
+
 .flotte3 {
     clear:left;
     width: 300px;
@@ -206,31 +244,15 @@ main {
     display: inline;
 }
 
+/* PAGE A PROPOS */ 
 
-/*footer */
-
-footer {
-    right:0;
-    height:100px;
-    width: calc(100% - 700px);
-    background-color: #2f2f2f;
-    display: inline;
-    position:fixed;
-    bottom:0;
-    margin-bottom: 30px;
-    }
-
-footer a {
-     color:white;
-    margin-left:2px;
-    font:10px 'arial';
-    letter-spacing:1px;
-    text-transform:uppercase;
-    font-weight:800;
-    display: inline-block;
+.propos {
+    margin-left: 360px;
+    margin-right:50px;
+    overflow: hidden;
 }
-    
-.en-cours {
-    text-decoration: underline;
-    color: white;
+
+.propos p {
+    text-align: center;
+    margin-top: 200px;
 }
